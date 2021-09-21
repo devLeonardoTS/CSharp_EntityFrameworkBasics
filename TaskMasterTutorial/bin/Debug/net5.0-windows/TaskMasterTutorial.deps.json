@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "TaskMasterTutorial/1.0.0": {
+        "runtime": {
+          "TaskMasterTutorial.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TaskMasterTutorial/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
