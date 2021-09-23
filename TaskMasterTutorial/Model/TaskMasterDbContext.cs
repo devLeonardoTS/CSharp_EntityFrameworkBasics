@@ -37,6 +37,11 @@ namespace TaskMasterTutorial.Model
          * 
          * Extra: We created a singleton property in our program entry-point to allow access to a "appsettings" file.
          * Through it we can assign the SQLite DB File name, instead of hard coding it here in this context's Data Source.
+         * 
+         * We can use "update-database MigrationName" to "revert" or "foward" to the specified migration state of our DB.
+         * 
+         * Next: We are adding an "AddStatusSeedDataToDb" migration in order to programatically add our base statuses into the "Statuses" table.
+         * The migration will be created using "Add-Migration AddStatusSeedDataToDb" command and will have its Up() and Down() functions empty.
          */
     }
 }

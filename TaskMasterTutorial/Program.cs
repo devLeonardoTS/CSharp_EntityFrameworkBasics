@@ -18,9 +18,11 @@ namespace TaskMasterTutorial
              * Using "Microsoft.Extensions.Configuration.Json" and "Microsoft.Extensions.Configuration.Binder"
              * To read a configuration file since we don't have "App.config" in .NET Core 5.0.
              * 
-             * The function acts as a singleton access to the data in the configuration file, this allows the DbContext
+             * The function acts as a singleton* access to the data in the configuration file, this allows the DbContext
              * to access the SQLiteDbFile Name from a config file instead of a hard-coded string when trying to use the
              * "Add-Migration" command through the Package Manager Console.
+             * 
+             * Singleton Pattern: Basically ensures that only one instance of an object is instantiated throughout the program.
              */
 
             // 
