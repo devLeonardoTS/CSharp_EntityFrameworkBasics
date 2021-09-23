@@ -1,7 +1,7 @@
 ﻿
 namespace TaskMasterTutorial
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -166,7 +166,7 @@ namespace TaskMasterTutorial
             this.txtTask.Size = new System.Drawing.Size(180, 23);
             this.txtTask.TabIndex = 0;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -174,9 +174,10 @@ namespace TaskMasterTutorial
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.MinimumSize = new System.Drawing.Size(616, 364);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Task Master";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
