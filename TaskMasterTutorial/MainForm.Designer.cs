@@ -141,6 +141,7 @@ namespace TaskMasterTutorial
             this.btnCreateTask.TabIndex = 3;
             this.btnCreateTask.Text = "Create";
             this.btnCreateTask.UseVisualStyleBackColor = true;
+            this.btnCreateTask.Click += new System.EventHandler(this.btnCreateTask_Click);
             // 
             // cboStatus
             // 
