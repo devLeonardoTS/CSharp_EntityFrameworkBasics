@@ -109,12 +109,15 @@ namespace TaskMasterTutorial
             // 
             // btnCancel
             // 
+            this.btnCancel.Enabled = false;
             this.btnCancel.Location = new System.Drawing.Point(273, 81);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 6;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Visible = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnDeleteTask
             // 
@@ -129,12 +132,14 @@ namespace TaskMasterTutorial
             // 
             // btnUpdateTask
             // 
+            this.btnUpdateTask.Enabled = false;
             this.btnUpdateTask.Location = new System.Drawing.Point(273, 52);
             this.btnUpdateTask.Name = "btnUpdateTask";
             this.btnUpdateTask.Size = new System.Drawing.Size(75, 23);
             this.btnUpdateTask.TabIndex = 4;
             this.btnUpdateTask.Text = "Update";
             this.btnUpdateTask.UseVisualStyleBackColor = true;
+            this.btnUpdateTask.Click += new System.EventHandler(this.btnUpdateTask_Click);
             // 
             // btnCreateTask
             // 
@@ -157,7 +162,8 @@ namespace TaskMasterTutorial
             // 
             // dateDueDate
             // 
-            this.dateDueDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateDueDate.CustomFormat = "dd/MM/yyyy HH:mm";
+            this.dateDueDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateDueDate.Location = new System.Drawing.Point(392, 23);
             this.dateDueDate.Name = "dateDueDate";
             this.dateDueDate.Size = new System.Drawing.Size(177, 23);
